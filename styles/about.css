@@ -1,0 +1,239 @@
+@charset "utf-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #fff;
+}
+
+
+/* ----------navigator---------- */
+/* ----------navigator---------- */
+/* .nav::before, .nav::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+.top-bar {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  line-height: 1;
+}
+.top-bar h1 {
+  font-size: 24px;
+  margin: 8px;
+  padding-top: 2px;
+  text-shadow: 2px 2px 2px #aaa;
+}
+.top-bar h1 a {
+  text-decoration: none;
+  color: #000;
+}
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.icon {
+  display: block;
+  color: #000;
+  font-weight: 900;
+  font-size: 24px;
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.top-bar nav {
+  width: 100%;
+  display: none;
+}
+.show .top-bar nav{
+  display: block;
+  line-height: 1.4;
+  padding-left: 8px;
+}
+.top-bar li:hover {
+  background-color: #ddd;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  display: block;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+
+
+/* main-content */
+.wrapper {
+  max-width: 1100px;
+  margin: 70px auto;
+}
+.col {
+  /* display: flex; */
+  margin-bottom: 30px;
+}
+ h2 {
+  text-align: center;
+}
+.col01 img, .col02 img, .col03 img {
+  padding-right: 10px;
+}
+.col-01 img {
+  width: 95%;
+  margin: 8px;
+}
+.col-03 img {
+  width: 96%;
+  margin: 8px;
+}
+.box p {
+  padding: 12px;
+  border-bottom: 3px dotted rgb(245,245,245);
+}
+.box {
+  padding: 10px;
+  margin: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.table {
+  border: 1px solid #000;
+  margin-left: 2px;
+  text-align: center;
+}
+.table td {
+  width: 50%;
+  border: 1px solid #000;
+}
+.box:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.col img:hover {
+  filter:grayscale(0.5);
+}
+
+
+
+/* -------------footer----- -------*/
+.footer {
+  background: url(https://file.qingchenwang.com/pptbg/danya/2019-10-24/qcw_e00106046b5ed317d74a3f2a2ab4ff98.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+}
+.footer .container .fa-angle-up {
+  display: block;
+  font-size: 30px;
+}
+.textcontent-1 .fa-heart {
+  color: pink;
+  font-weight: bold;
+  padding-right: 8px;
+}
+.container {
+  background-color: transparent;
+  padding: 64px 0;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.container a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+
+
+/* responsive tool */
+@media only screen and (min-width: 660px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1;
+  }
+  .btn {
+    display: none;
+  }
+  .top-bar {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .top-bar nav {
+    display: block;
+  }
+  .top-bar nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .top-bar nav ul li {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 12px 18px;
+    text-align: center;
+    transition: 0.6s;
+  }
+  .top-bar nav li:hover a {
+    color: #aaa;
+    cursor: pointer;
+  }
+  .col {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-02 {
+    width: 40%;
+  }
+  .col-02 .box {
+    margin-top: 0;
+    line-height: 2;
+  }
+  .box p {
+    border-bottom: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .col-03 {
+    width: 70%;
+  }
+  .col-04 {
+    width: 40%;
+  }
+  .col-04 .table {
+    margin-left: 5px;
+  }
+
+}

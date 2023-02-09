@@ -1,0 +1,134 @@
+@charset "utf-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ----------navigator---------- */
+/* .nav::before, .nav::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+.top-bar {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  line-height: 1;
+}
+.top-bar h1 {
+  font-size: 24px;
+  margin: 8px;
+  padding-top: 2px;
+  text-shadow: 2px 2px 2px #aaa;
+}
+.top-bar h1 a {
+  text-decoration: none;
+  color: #000;
+}
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.icon {
+  display: block;
+  color: #000;
+  font-weight: 900;
+  font-size: 24px;
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.top-bar nav {
+  width: 100%;
+  display: none;
+}
+.show .top-bar nav{
+  display: block;
+  line-height: 1.4;
+  padding-left: 8px;
+}
+.top-bar li:hover {
+  background-color: #ddd;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  display: block;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+/* !------main----------! */
+.wrapper {
+  max-width: 900px;
+  margin: 96px auto;
+}
+
+
+
+
+/* responsive tool */
+@media only screen and (min-width: 660px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1;
+  }
+  .btn {
+    display: none;
+  }
+  .top-bar {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .top-bar nav {
+    display: block;
+  }
+  .top-bar nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .top-bar nav ul li {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 12px 18px;
+    text-align: center;
+    transition: 0.6s;
+  }
+  .top-bar nav li:hover a {
+    color: #aaa;
+    cursor: pointer;
+  }
+}

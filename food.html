@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156750683-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156750683-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/food.css">
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <title>Cuisine</title>
+</head>
+
+<body>
+
+  <!-- navigation   -->
+  <header>
+
+    <div class="top-bar">
+      <h1> <a href="./index.html">CN</a></h1>
+      <button class="btn">
+        <span class="icon">&#9776;</span>
+      </button>
+      <nav>
+        <ul class="navi">
+          <li> <a href="./about.html" target="_blank">About</a></li>
+          <li> <a href="./food.html">Cuisines</a></li>
+          <li> <a href="./scenery.html">Scenery</a></li>
+          <li> <a href="./credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="banner">
+      <img src="./images/hero1.jpg" alt="Great-wall">
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="wrapper">
+
+    <div class="topic">
+      <h2 class="bottom-bar">Cuisine Section</h2>
+    </div>
+
+    <div class="content">
+      <div class="list">
+        <h2>Sichuan cuisine</h2>
+        <h3>Features</h3>
+        <ul>
+          <li>Yuxiang</li>
+          <li>MaLa</li>
+          <li>Guaiwei</li>
+        </ul>
+      </div>
+      <div class="images">
+        <img class="slider animate-opacity" src="./images/tofu1.jpg" alt="Tofu">
+        <img class="slider animate-opacity" style="display:none" src="./images/sichuan2.jpg" alt="Fuqi_Fei_Pian">
+        <img class="slider animate-opacity" style="display:none" src="./images/sichuan4.jpg" alt="dandan nodle">
+        <div class="content-1">
+          <img class="img1" onclick="goto(2)" src="./images/sichuan3.jpg" alt="Fuqi_Fei_Pian">
+          <img class="img1" onclick="goto(3)" src="./images/sichuan5.jpg" alt="dandan nodle">
+          <img class="img1" onclick="goto(1)" src="./images/tofu2.jpg" alt="Tofu">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="list">
+        <h2>Lu cuisine</h2>
+        <h3>Features</h3>
+        <ul>
+          <li>Wide selection of material</li>
+          <li>Different cooking methods</li>
+          <li>Domestic raw materials</li>
+      </div>
+      <div class="images">
+        <img class="sliders animate-opacity" src="./images/Lu1.jpg" alt="Lu">
+        <img class="sliders animate-opacity" style="display: none" src="./images/shrimp1.jpg" alt="shrimp">
+        <img class="sliders animate-opacity" style="display: none" src="./images/Tofuu1.jpg" alt="Tofu">
+        <div class="content-1">
+          <img class="img1" onclick="gotoo(2)" src="./images/Lu2.jpg" alt="shrimp">
+          <img class="img1" onclick="gotoo(3)" src="./images/shrimp2.jpg" alt="Tofu">
+          <img class="img1" onclick="gotoo(1)" src="./images/Tofuu2.jpg" alt="Lu">
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="list">
+        <h2>Cantonese cuisine</h2>
+        <h3>Features</h3>
+        <ul>
+          <li>Well balanced flavore </li>
+          <li>Modest spices</li>
+          <li>Freshness</li>
+          <li>No use of fresh herbs in cooking</li>
+        </ul>
+      </div>
+      <div class="images">
+        <img class="sli animate-opacity" src="./images/Teochew1.jpg" alt="Teochew Brine Platter">
+        <img class="sli animate-opacity" style="display: none" src="./images/Honey1.jpg" alt="Honey-Stewed BBQ pork">
+        <img class="sli animate-opacity" style="display: none" src="./images/abalone1.jpg" alt="abalone">
+        <div class="content-1">
+          <img class="img1" onclick="gotol(2)" src="./images/Honey2.jpg" alt="Honey-Stewed BBQ pork">
+          <img class="img1" onclick="gotol(3)" src="./images/abalone2.jpg" alt="abalone">
+          <img class="img1" onclick="gotol(1)" src="./images/Teochew2.jpg" alt="Teochew Brine Platter">
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="list">
+        <h2>Huaiyang cuisine</h2>
+        <h3>Features</h3>
+        <ul>
+          <li>Slightly sweet side</li>
+          <li>Never spicy</li>
+          <li>Meat base in cooking
+            <ol class="ol-content">
+              <li class="li-1" style="padding-top: 8px">Pork</li>
+              <li class="li-1">freshwater fish</li>
+              <li class="li-1">other aquatic creatures</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="images">
+        <img class="Sliders animate-opacity" src="./images/Yangzhou-fried-rice1.jpg" alt="Yangzhou fried rice">
+        <img class="Sliders animate-opacity" style="display: none" src="./images/Plain-tofu-soup1.jpg" alt="Plain tofu soup">
+        <img class="Sliders animate-opacity" style="display: none" src="./images/Crab-meat-lion's-head1.jpg" alt="Crab meat lion's head">
+        <div class="content-1">
+          <img class="img1" onclick="gotoy(2)" src="./images/Plain-tofu-soup2.jpg" alt="Plain tofu soup">
+          <img class="img1" onclick="gotoy(3)" src="./images/Crab-meat-lion's-head2.jpg" alt="Crab meat lion's head">
+          <img class="img1" onclick="gotoy(1)" src="./images/Yangzhou-fried-rice2.jpg" alt="Yangzhou fried rice">
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#top"> <i class="fas fa-angle-up"></i></a>
+      <p> For Education Only </p>
+      <p class="textcontent-1"> <i class="fas fa-heart"></i>Designed By Faye Liu</p>
+      <p> Contact at:<br>Email: fayeduoduo@gmail.com</p>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="./JS/cuisine.js">
+
+  </script>
+</body>
+
+</html>
